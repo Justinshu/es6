@@ -220,7 +220,7 @@
  */
 .book.color-theme-1 .book-summary {
   color: #afa790;
-  background: #111111;
+  background: #5e8a4d;
   border-right: 1px solid rgba(0, 0, 0, 0.07);
 }
 .book.color-theme-1 .book-summary .book-search {
@@ -242,13 +242,13 @@
 }
 .book.color-theme-1 .book-summary ul.summary li a,
 .book.color-theme-1 .book-summary ul.summary li span {
-  color: #877f6a;
+  color: #ffffff;
   background: transparent;
   font-weight: normal;
 }
 .book.color-theme-1 .book-summary ul.summary li.active > a,
 .book.color-theme-1 .book-summary ul.summary li a:hover {
-  color: #704214;
+  color: #ffffff;
   background: transparent;
   font-weight: normal;
 }
