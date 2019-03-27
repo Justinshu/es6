@@ -180,38 +180,6 @@
             
 
             
-            <ul class="articles">
-                
-    
-        <li class="chapter " data-level="1.2.2.3.1" data-path="对比常量声明与变量声明.html">
-            
-                <a href="对比常量声明与变量声明.html">
-            
-                    
-                    对比常量声明与变量声明
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="1.2.2.3.2" data-path="使用const声明对象.html">
-            
-                <a href="使用const声明对象.html">
-            
-                    
-                    使用const声明对象
-            
-                </a>
-            
-
-            
-        </li>
-    
-
-            </ul>
-            
         </li>
     
         <li class="chapter " data-level="1.2.2.4" data-path="暂时性死区.html">
@@ -524,21 +492,43 @@
                                 
                                 <h1 id="var&#x58F0;&#x660E;&#x4E0E;&#x53D8;&#x91CF;&#x63D0;&#x5347;">var&#x58F0;&#x660E;&#x4E0E;&#x53D8;&#x91CF;&#x63D0;&#x5347;</h1>
 <p><em>&#x1F388;&#x7406;&#x89E3;</em></p>
-<pre><code class="lang-ES6">&#x4F7F;&#x7528; var &#x58F0;&#x660E;&#x7684;&#x53D8;&#x91CF;&#xFF0C;&#x6709;&#x4E24;&#x79CD;&#x60C5;&#x51B5;&#xFF0C;&#x4E00;&#x79CD;&#x662F;&#x58F0;&#x660E;&#x5728;&#x4EFB;&#x610F;&#x51FD;&#x6570;&#x7684;&#x5185;&#x90E8;&#xFF0C;&#x5728;&#x51FD;&#x6570;&#x5185;&#x4F1A;&#x88AB;&#x5F53;&#x505A;&#x58F0;&#x660E;&#x5728;&#x51FD;&#x6570;&#x7684;&#x9876;&#x90E8;&#xFF1B;&#x53E6;&#x4E00;&#x79CD;&#x662F;&#x4E0D;&#x5728;&#x4EFB;&#x610F;&#x51FD;&#x6570;&#x5185;&#x90E8;&#x58F0;&#x660E;&#x7684;&#x65F6;&#x5019;&#x4F1A;&#x88AB;&#x5F53;&#x505A;&#x58F0;&#x660E;&#x5728;&#x5168;&#x5C40;&#x4F5C;&#x7528;&#x57DF;&#x9876;&#x90E8;&#xFF1B;&#x8FD9;&#x5C31;&#x662F;&#x6240;&#x8C13;&#x7684;&#x53D8;&#x91CF;&#x63D0;&#x5347;&#xFF08;hoisting&#xFF09;
-</code></pre>
+<blockquote>
+<p>&#x4F7F;&#x7528; var &#x58F0;&#x660E;&#x7684;&#x53D8;&#x91CF;&#xFF0C;&#x6709;&#x4E24;&#x79CD;&#x60C5;&#x51B5;&#xFF0C;&#x4E00;&#x79CD;&#x662F;&#x58F0;&#x660E;&#x5728;&#x4EFB;&#x610F;&#x51FD;&#x6570;&#x7684;&#x5185;&#x90E8;&#xFF0C;&#x5728;&#x51FD;&#x6570;&#x5185;&#x4F1A;&#x88AB;&#x5F53;&#x505A;&#x58F0;&#x660E;&#x5728;&#x51FD;&#x6570;&#x7684;&#x9876;&#x90E8;&#xFF1B;&#x53E6;&#x4E00;&#x79CD;&#x662F;&#x4E0D;&#x5728;&#x4EFB;&#x610F;&#x51FD;&#x6570;&#x5185;&#x90E8;&#x58F0;&#x660E;&#x7684;&#x65F6;&#x5019;&#x4F1A;&#x88AB;&#x5F53;&#x505A;&#x58F0;&#x660E;&#x5728;&#x5168;&#x5C40;&#x4F5C;&#x7528;&#x57DF;&#x9876;&#x90E8;&#xFF1B;&#x8FD9;&#x5C31;&#x662F;&#x6240;&#x8C13;&#x7684;&#x53D8;&#x91CF;&#x63D0;&#x5347;&#xFF08;hoisting&#xFF09;</p>
+</blockquote>
 <p><em>&#x1F388;&#x51FD;&#x6570;&#x89E3;&#x91CA;</em></p>
-<pre><code>function getValue(condition){
-    if    (condition){                                
+<pre><code class="lang-&#x53D8;&#x91CF;&#x63D0;&#x5347;">function getValue(condition){
+    if (condition){                                
          var value = &quot;blue&quot;;
-            //    &#x5176;&#x4ED6;&#x4EE3;&#x7801;
-         return    value;            
+            // &#x5176;&#x4ED6;&#x4EE3;&#x7801;
+         return value;            
     } else {
          // value &#x5728;&#x6B64;&#x5904;&#x53EF;&#x8BBF;&#x95EE;&#xFF0C;&#x503C;&#x4E3A; undefined
-         return    null;                
+         return null;                
     }
-         //    value &#x5728;&#x6B64;&#x5904;&#x53EF;&#x8BBF;&#x95EE;&#xFF0C;&#x503C;&#x4E3A;    undefined 
+         // value &#x5728;&#x6B64;&#x5904;&#x53EF;&#x8BBF;&#x95EE;&#xFF0C;&#x503C;&#x4E3A; undefined 
 }
 </code></pre>
+<p>&#x4E0A;&#x8FF0;&#x51FD;&#x6570;&#xFF0C;&#x5982;&#x679C;&#x662F;&#x6211;&#x521D;&#x5B66;&#x7684;&#x65F6;&#x5019;&#x4F1A;&#x8BA4;&#x4E3A;&#xFF0C;&#x53EA;&#x6709;&#x5728;<code>condition</code>&#x7684;&#x503C;&#x4E3A;<code>true</code>&#x65F6;&#x624D;&#x4F1A;&#x521B;&#x5EFA;&#x53D8;&#x91CF;<code>value</code>&#x5176;&#x5B9E;&#x4E0D;&#x662F;&#x8FD9;&#x6837;&#x7684;&#xFF0C;&#x5B9E;&#x9645;&#x4E0A;&#xFF0C;<code>value</code>&#x65E0;&#x8BBA;&#x5982;&#x4F55;&#x90FD;&#x4F1A;&#x88AB;&#x521B;&#x5EFA;&#xFF0C;<code>JS&#x5F15;&#x64CE;</code>&#x5728;&#x540E;&#x53F0;&#x5BF9;<code>getValue</code>&#x51FD;&#x6570;&#x8FDB;&#x884C;&#x4E86;&#x8C03;&#x6574;&#xFF0C;&#x7ED3;&#x679C;&#x5982;&#x4E0B;&#x51FD;&#x6570;&#xFF1A;</p>
+<pre><code class="lang-&#x540E;&#x53F0;&#x6E32;&#x67D3;">function getValue(condition){
+    var value;
+    // &#x5B9E;&#x9645;&#x4E0A;&#x662F;&#x5728;&#x51FD;&#x6570;&#x9876;&#x90E8;&#x58F0;&#x660E;&#x4E86;value&#xFF0C;&#x76F8;&#x5F53;&#x4E8E;&#x58F0;&#x660E;&#x53D8;&#x91CF;&#x63D0;&#x5347;&#x4E86;
+    if (condition){
+        value = &quot;blue&quot;;
+        //&#x5728;&#x8FD9;&#x91CC;&#x521D;&#x59CB;&#x5316;&#x4E86;value
+        // &#x5176;&#x4ED6;&#x4EE3;&#x7801;
+        return value;
+    }else{ 
+
+        //&#x8FD9;&#x91CC;&#x4E5F;&#x53EF;&#x4EE5;&#x8BBF;&#x95EE;&#x5230;value&#xFF0C;&#x56E0;&#x4E3A;&#x6CA1;&#x6709;&#x88AB;&#x521D;&#x59CB;&#x5316;&#xFF0C;&#x6240;&#x4EE5;&#x62FF;&#x5230;&#x7684;value&#x662F;undefined
+        return null;
+    }
+    // &#x5728;&#x8FD9;&#x91CC;&#x53EF;&#x4EE5;&#x62FF;&#x5230;&#x58F0;&#x660E;&#x7684;value&#xFF0C;&#x4F46;&#x662F;&#x6CA1;&#x6709;&#x521D;&#x59CB;&#x5316;&#x503C;&#xFF0C;&#x6240;&#x4EE5;&#x662F;undefined
+}
+</code></pre>
+<p>&#x4E0A;&#x8FF0;&#x51FD;&#x6570;&#x89E3;&#x91CA;&#x4E86;var&#x58F0;&#x660E;&#x4EE5;&#x53CA;&#x53D8;&#x91CF;&#x63D0;&#x5347;&#x7684;&#x51FD;&#x6570;&#x5F0F;&#x60C5;&#x51B5;&#xFF1B;&#x672A;&#x5728;&#x4EFB;&#x610F;&#x51FD;&#x6570;&#x5185;&#x4F7F;&#x7528;var&#x8FDB;&#x884C;&#x58F0;&#x660E;&#x53D8;&#x91CF;&#x7684;&#x60C5;&#x51B5;&#x7C7B;&#x4F3C;&#xFF0C;&#x53EA;&#x662F;&#x53D8;&#x91CF;&#x88AB;&#x63D0;&#x5347;&#x5230;&#x4E86;&#x5168;&#x5C40;&#x9876;&#x90E8;&#xFF1B;</p>
+<p><em>&#x1F388;&#x603B;&#x7ED3;</em></p>
+<p><strong>&#x7531;&#x4E8E;&#x8FD9;&#x79CD;&#x60C5;&#x51B5;&#x7684;&#x51FA;&#x73B0;&#x4F1A;&#x5BFC;&#x81F4;&#x53D8;&#x91CF;&#x6C61;&#x67D3;&#xFF0C;&#x6240;&#x4EE5;&#x5728;es6&#x4E2D;&#x51FA;&#x63D0;&#x51FA;&#x4E86;&#x5757;&#x7EA7;&#x4F5C;&#x7528;&#x57DF;&#x7684;&#x5B9A;&#x4E49;&#xFF0C;&#x4E00;&#x65B9;&#x9762;&#x662F;&#x4E3A;&#x4E86;&#x9632;&#x6B62;&#x53D8;&#x91CF;&#x6C61;&#x67D3;&#x8BA9;&#x53D8;&#x91CF;&#x7684;&#x751F;&#x547D;&#x5468;&#x671F;&#x53D8;&#x5F97;&#x66F4;&#x52A0;&#x53EF;&#x63A7;&#xFF0C;&#x53E6;&#x4E00;&#x65B9;&#x9762;&#x662F;&#x4E3A;&#x4E86;&#x4E0E;&#x5176;&#x4ED6;&#x8BED;&#x8A00;&#x7684;&#x89C4;&#x8303;&#x4E00;&#x81F4;&#xFF0C;&#x5229;&#x4E8E;&#x5F00;&#x53D1;&#x8005;&#x7406;&#x89E3;</strong></p>
+
                                 
                                 </section>
                             
@@ -581,7 +571,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"var声明与变量提升","level":"1.2.1","depth":2,"next":{"title":"块级声明","level":"1.2.2","depth":2,"path":"块级绑定/块级声明.md","ref":"块级绑定/块级声明.md","articles":[{"title":"let声明","level":"1.2.2.1","depth":3,"path":"块级绑定/let声明.md","ref":"块级绑定/let声明.md","articles":[]},{"title":"禁止重复声明","level":"1.2.2.2","depth":3,"path":"块级绑定/禁止重复声明.md","ref":"块级绑定/禁止重复声明.md","articles":[]},{"title":"常量声明","level":"1.2.2.3","depth":3,"path":"块级绑定/常量声明.md","ref":"块级绑定/常量声明.md","articles":[{"title":"对比常量声明与变量声明","level":"1.2.2.3.1","depth":4,"path":"块级绑定/对比常量声明与变量声明.md","ref":"块级绑定/对比常量声明与变量声明.md","articles":[]},{"title":"使用const声明对象","level":"1.2.2.3.2","depth":4,"path":"块级绑定/使用const声明对象.md","ref":"块级绑定/使用const声明对象.md","articles":[]}]},{"title":"暂时性死区","level":"1.2.2.4","depth":3,"path":"块级绑定/暂时性死区.md","ref":"块级绑定/暂时性死区.md","articles":[]}]},"previous":{"title":"块级绑定","level":"1.2","depth":1,"path":"块级绑定/块级绑定.md","ref":"块级绑定/块级绑定.md","articles":[{"title":"var声明与变量提升","level":"1.2.1","depth":2,"path":"块级绑定/var声明与变量提升.md","ref":"块级绑定/var声明与变量提升.md","articles":[]},{"title":"块级声明","level":"1.2.2","depth":2,"path":"块级绑定/块级声明.md","ref":"块级绑定/块级声明.md","articles":[{"title":"let声明","level":"1.2.2.1","depth":3,"path":"块级绑定/let声明.md","ref":"块级绑定/let声明.md","articles":[]},{"title":"禁止重复声明","level":"1.2.2.2","depth":3,"path":"块级绑定/禁止重复声明.md","ref":"块级绑定/禁止重复声明.md","articles":[]},{"title":"常量声明","level":"1.2.2.3","depth":3,"path":"块级绑定/常量声明.md","ref":"块级绑定/常量声明.md","articles":[{"title":"对比常量声明与变量声明","level":"1.2.2.3.1","depth":4,"path":"块级绑定/对比常量声明与变量声明.md","ref":"块级绑定/对比常量声明与变量声明.md","articles":[]},{"title":"使用const声明对象","level":"1.2.2.3.2","depth":4,"path":"块级绑定/使用const声明对象.md","ref":"块级绑定/使用const声明对象.md","articles":[]}]},{"title":"暂时性死区","level":"1.2.2.4","depth":3,"path":"块级绑定/暂时性死区.md","ref":"块级绑定/暂时性死区.md","articles":[]}]},{"title":"循环中的块级绑定","level":"1.2.3","depth":2,"path":"块级绑定/循环中的块级绑定.md","ref":"块级绑定/循环中的块级绑定.md","articles":[{"title":"循环内的函数","level":"1.2.3.1","depth":3,"path":"块级绑定/循环内的函数.md","ref":"块级绑定/循环内的函数.md","articles":[]},{"title":"循环内的let声明","level":"1.2.3.2","depth":3,"path":"块级绑定/循环内的let声明.md","ref":"块级绑定/循环内的let声明.md","articles":[]},{"title":"循环内的常量声明","level":"1.2.3.3","depth":3,"path":"块级绑定/循环内的常量声明.md","ref":"块级绑定/循环内的常量声明.md","articles":[]}]},{"title":"全局块级绑定","level":"1.2.4","depth":2,"path":"块级绑定/全局块级绑定.md","ref":"块级绑定/全局块级绑定.md","articles":[]},{"title":"块级绑定新的最佳实践","level":"1.2.5","depth":2,"path":"块级绑定/块级绑定新的最佳实践.md","ref":"块级绑定/块级绑定新的最佳实践.md","articles":[]}]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"块级绑定/var声明与变量提升.md","mtime":"2019-03-27T00:54:15.683Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-03-27T00:54:51.624Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"var声明与变量提升","level":"1.2.1","depth":2,"next":{"title":"块级声明","level":"1.2.2","depth":2,"path":"块级绑定/块级声明.md","ref":"块级绑定/块级声明.md","articles":[{"title":"let声明","level":"1.2.2.1","depth":3,"path":"块级绑定/let声明.md","ref":"块级绑定/let声明.md","articles":[]},{"title":"禁止重复声明","level":"1.2.2.2","depth":3,"path":"块级绑定/禁止重复声明.md","ref":"块级绑定/禁止重复声明.md","articles":[]},{"title":"常量声明","level":"1.2.2.3","depth":3,"path":"块级绑定/常量声明.md","ref":"块级绑定/常量声明.md","articles":[]},{"title":"暂时性死区","level":"1.2.2.4","depth":3,"path":"块级绑定/暂时性死区.md","ref":"块级绑定/暂时性死区.md","articles":[]}]},"previous":{"title":"块级绑定","level":"1.2","depth":1,"path":"块级绑定/块级绑定.md","ref":"块级绑定/块级绑定.md","articles":[{"title":"var声明与变量提升","level":"1.2.1","depth":2,"path":"块级绑定/var声明与变量提升.md","ref":"块级绑定/var声明与变量提升.md","articles":[]},{"title":"块级声明","level":"1.2.2","depth":2,"path":"块级绑定/块级声明.md","ref":"块级绑定/块级声明.md","articles":[{"title":"let声明","level":"1.2.2.1","depth":3,"path":"块级绑定/let声明.md","ref":"块级绑定/let声明.md","articles":[]},{"title":"禁止重复声明","level":"1.2.2.2","depth":3,"path":"块级绑定/禁止重复声明.md","ref":"块级绑定/禁止重复声明.md","articles":[]},{"title":"常量声明","level":"1.2.2.3","depth":3,"path":"块级绑定/常量声明.md","ref":"块级绑定/常量声明.md","articles":[]},{"title":"暂时性死区","level":"1.2.2.4","depth":3,"path":"块级绑定/暂时性死区.md","ref":"块级绑定/暂时性死区.md","articles":[]}]},{"title":"循环中的块级绑定","level":"1.2.3","depth":2,"path":"块级绑定/循环中的块级绑定.md","ref":"块级绑定/循环中的块级绑定.md","articles":[{"title":"循环内的函数","level":"1.2.3.1","depth":3,"path":"块级绑定/循环内的函数.md","ref":"块级绑定/循环内的函数.md","articles":[]},{"title":"循环内的let声明","level":"1.2.3.2","depth":3,"path":"块级绑定/循环内的let声明.md","ref":"块级绑定/循环内的let声明.md","articles":[]},{"title":"循环内的常量声明","level":"1.2.3.3","depth":3,"path":"块级绑定/循环内的常量声明.md","ref":"块级绑定/循环内的常量声明.md","articles":[]}]},{"title":"全局块级绑定","level":"1.2.4","depth":2,"path":"块级绑定/全局块级绑定.md","ref":"块级绑定/全局块级绑定.md","articles":[]},{"title":"块级绑定新的最佳实践","level":"1.2.5","depth":2,"path":"块级绑定/块级绑定新的最佳实践.md","ref":"块级绑定/块级绑定新的最佳实践.md","articles":[]}]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"块级绑定/var声明与变量提升.md","mtime":"2019-03-27T01:32:36.940Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-03-27T01:40:39.272Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
