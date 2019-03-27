@@ -1,4 +1,6 @@
 # 😊深入学习ES6
+[![框架](https://img.shields.io/badge/language-es6-green.svg)](http://es6.ruanyifeng.com/#docs/let)  [![vue](https://img.shields.io/badge/framework-vue-orange.svg)](https://cn.vuejs.org/v2/guide/index.html)
+
 
 > 😎 本文的主要介绍自己学习es6过程
 
@@ -22,7 +24,7 @@
 * StackOverflow
 
 
-* 看书
+* 看《Uderstanding  ECMAScript6》
 
 > 😜 提升途径
 
