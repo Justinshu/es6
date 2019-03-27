@@ -755,6 +755,82 @@
                                 <section class="normal markdown-section">
                                 
                                 <h1 id="&#x5E38;&#x91CF;&#x58F0;&#x660E;">&#x5E38;&#x91CF;&#x58F0;&#x660E;</h1>
+<h3 id="&#x1F388;&#x5F15;&#x7528;">&#x1F388;&#x5F15;&#x7528;</h3>
+<p>&#xA0;</p>
+<p>&#x5728;<code>ES6</code>&#x4E2D;&#x91CC;&#x4E5F;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;<code>const</code>&#x8BED;&#x6CD5;&#x8FDB;&#x884C;&#x58F0;&#x660E;&#x3002;&#x4F7F;&#x7528;<code>const</code>&#x58F0;&#x660E;&#x7684;&#x53D8;&#x91CF;&#x4F1A;&#x88AB;&#x8BA4;&#x4E3A;&#x662F;&#x5E38;&#x91CF;&#xFF08; constant &#xFF09;&#xFF0C;&#x610F;&#x5473;&#x7740;&#x5B83;&#x4EEC;&#x7684;&#x503C;&#x5728;&#x88AB;&#x8BBE;&#x7F6E;&#x5B8C;&#x6210;&#x540E;&#x5C31;&#x4E0D;&#x80FD;&#x518D;&#x88AB;&#x6539;&#x53D8;&#x3002;&#x6B63;&#x56E0;&#x4E3A;&#x5982;&#x6B64;&#xFF0C;&#x6240;&#x6709;&#x7684;<code>const</code>&#x53D8;&#x91CF;&#x90FD;&#x9700;&#x8981;&#x5728;&#x58F0;&#x660E;&#x65F6;&#x8FDB;&#x884C;&#x521D;&#x59CB;&#x5316;&#xFF0C;&#x793A;&#x4F8B;&#x5982;&#x4E0B;&#xFF1A;</p>
+<p>&#xA0;</p>
+<pre><code>//&#x6709;&#x6548;&#x7684;&#x5E38;&#x91CF;
+
+const maxItems = 30;
+
+//&#x8BED;&#x6CD5;&#x9519;&#x8BEF;&#xFF1A;&#x672A;&#x8FDB;&#x884C;&#x521D;&#x59CB;&#x5316;
+
+const username;
+</code></pre><p>&#xA0;</p>
+<p><code>maxItems</code>&#x53D8;&#x91CF;&#x88AB;&#x521D;&#x59CB;&#x5316;&#x4E86;&#xFF0C;&#x56E0;&#x6B64;&#x5B83;&#x7684;<code>const</code>&#x58F0;&#x660E;&#x80FD;&#x6B63;&#x5E38;&#x8D77;&#x6548;&#x3002;&#x800C;<code>username</code>&#x53D8;&#x91CF;&#x6CA1;&#x6709;&#x88AB;&#x521D;&#x59CB;&#x5316;&#xFF0C;&#x5BFC;&#x81F4;&#x5728;&#x8BD5;&#x56FE;&#x8FD0;&#x884C;&#x8FD9;&#x6BB5;&#x4EE3;&#x7801;&#x65F6;&#x629B;&#x51FA;&#x4E86;&#x9519;&#x8BEF;&#x3002;</p>
+<p>&#xA0;</p>
+<hr>
+<h3 id="&#x1F355;&#x5BF9;&#x6BD4;&#x5E38;&#x91CF;&#x58F0;&#x660E;&#x4E0E;-let-&#x58F0;&#x660E;">&#x1F355;&#x5BF9;&#x6BD4;&#x5E38;&#x91CF;&#x58F0;&#x660E;&#x4E0E; let &#x58F0;&#x660E;</h3>
+<p>&#xA0;</p>
+<p>&#x5E38;&#x91CF;&#x58F0;&#x660E;&#x4E0E;<code>let</code>&#x58F0;&#x660E;&#x4E00;&#x6837;&#xFF0C;&#x90FD;&#x662F;<code>&#x5757;&#x7EA7;&#x58F0;&#x660E;</code>&#x3002;&#x8FD9;&#x610F;&#x5473;&#x7740;&#x5E38;&#x91CF;&#x5728;&#x58F0;&#x660E;&#x5B83;&#x4EEC;&#x7684;<code>&#x8BED;&#x53E5;&#x5757;&#x5916;&#x90E8;&#x662F;&#x65E0;&#x6CD5;&#x8BBF;&#x95EE;</code>&#x7684;&#xFF0C;&#x5E76;&#x4E14;&#x58F0;&#x660E;&#x4E5F;<code>&#x4E0D;&#x4F1A;&#x88AB;&#x63D0;&#x5347;</code>&#xFF0C;&#x793A;&#x4F8B;&#x5982;&#x4E0B;&#xFF1A;</p>
+<pre><code>if (condition){
+
+    const maxItems = 30;
+
+    //&#x5176;&#x4ED6;&#x4EE3;&#x7801;
+
+}
+
+//maxItems&#x5728;&#x6B64;&#x5904;&#x65E0;&#x6CD5;&#x8BBF;&#x95EE;
+</code></pre><p>&#xA0;</p>
+<p>&#x6B64;&#x4EE3;&#x7801;&#x4E2D;&#xFF0C;&#x5E38;&#x91CF;<code>maxItems</code>&#x5728;<code>if</code>&#x8BED;&#x53E5;&#x5185;&#x88AB;&#x58F0;&#x660E;&#x3002;<code>maxItems</code>&#x5728;&#x4EE3;&#x7801;&#x5757;&#x5916;&#x90E8;&#x65E0;&#x6CD5;&#x88AB;&#x8BBF;&#x95EE;&#xFF0C;&#x56E0;&#x4E3A;&#x8BE5;&#x8BED;&#x53E5;&#x5DF2;&#x7ED3;&#x675F;&#x6267;&#x884C;&#x3002;</p>
+<p>&#xA0;</p>
+<p>&#x4E0E;<code>let</code>&#x7684;&#x53E6;&#x4E00;&#x4E2A;&#x76F8;&#x4F3C;&#x4E4B;&#x5904;&#xFF0C;&#x662F;<code>const</code>&#x58F0;&#x660E;&#x4F1A;&#x5728;&#x540C;&#x4E00;&#x4F5C;&#x7528;&#x57DF;&#xFF08;&#x5168;&#x5C40;&#x6216;&#x662F;&#x51FD;&#x6570;&#x4F5C;&#x7528;&#x57DF;&#xFF09;&#x5185;&#x5B9A;&#x4E49;&#x4E00;&#x4E2A;&#x5DF2;&#x6709;&#x53D8;&#x91CF;&#x65F6;&#x4F1A;&#x629B;&#x51FA;&#x9519;&#x8BEF;&#xFF0C;&#x65E0;&#x8BBA;&#x662F;&#x8BE5;&#x53D8;&#x91CF;&#x6B64;&#x524D;&#x662F;&#x7528;<code>var</code>&#x58F0;&#x660E;&#x7684;&#xFF0C;&#x8FD8;&#x662F;&#x7528;<code>let</code>&#x58F0;&#x660E;&#x7684;&#x3002;&#x4F8B; &#x5982;&#x4EE5;&#x4E0B;&#x4EE3;&#x7801;&#xFF1A;</p>
+<p>&#xA0;&#xA0;</p>
+<pre><code>var message = &quot;Hello!&quot;;
+
+let age = 25;
+
+//&#x4E4B;&#x524D;&#x53D8;&#x91CF;&#x5DF2;&#x7ECF;&#x5B58;&#x5728;&#xFF0C;&#x4E0B;&#x9762;&#x4E8C;&#x8005;&#x90FD;&#x4F1A;&#x629B;&#x51FA;&#x9519;&#x8BEF;
+
+const message =&quot;World!&quot;;
+
+const age = 26;
+</code></pre><p>&#xA0;</p>
+<p>&#x4E24;&#x4E2A;<code>const</code>&#x58F0;&#x660E;&#x90FD;&#x53EF;&#x4EE5;&#x5355;&#x72EC;&#x4F7F;&#x7528;&#xFF0C;&#x4F46;&#x5728;&#x524D;&#x9762;&#x6DFB;&#x52A0;&#x4E86;<code>var</code>&#x4E0E;<code>let</code>&#x58F0;&#x660E;&#x540C;&#x53D8;&#x91CF;&#xFF08;&#x6216;&#x5E38;&#x91CF;&#xFF09;&#x7684;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;&#x4E8C;&#x8005;&#x90FD;&#x4F1A;&#x51FA;&#x95EE;&#x9898;&#x3002;</p>
+<p>&#xA0;</p>
+<p>&#x5C3D;&#x7BA1;&#x6709;&#x4E0A;&#x8FF0;&#x76F8;&#x4F3C;&#x4E4B;&#x5904;&#xFF0C;&#x4F46;<code>let</code>&#x4E0E;<code>const</code>&#x4E4B;&#x95F4;&#x4ECD;&#x7136;&#x6709;&#x4E2A;&#x5FC5;&#x987B;&#x7262;&#x8BB0;&#x7684;&#x91CD;&#x5927;&#x533A;&#x522B;&#xFF1A;&#x8BD5;&#x56FE;&#x5BF9;&#x4E4B;&#x524D;&#x7528;<code>const</code>&#x58F0;&#x660E;&#x7684;&#x5E38;&#x91CF;&#x8FDB;&#x884C;&#x8D4B;&#x503C;&#x4F1A;&#x629B;&#x51FA;&#x9519;&#x8BEF;&#xFF0C;&#x65E0;&#x8BBA;&#x662F;&#x5728;&#x4E25;&#x683C;&#x6A21;&#x5F0F;&#x8FD8;&#x662F;&#x975E;&#x4E25;&#x683C;&#x6A21;&#x5F0F;&#x4E0B;&#xFF1A;</p>
+<p>&#xA0;</p>
+<pre><code>const maxItems = 5;
+
+maxItems = 6;        //    &#x629B;&#x51FA;&#x9519;&#x8BEF;,&#x5E38;&#x91CF;&#x4E00;&#x65E6;&#x58F0;&#x660E;&#x521D;&#x59CB;&#x5316;&#x4E4B;&#x540E;&#x65E0;&#x6CD5;&#x518D;&#x6B21;&#x88AB;&#x8D4B;&#x503C;&#xFF0C;&#x4E0E;let&#x548C;var&#x4E4B;&#x95F4;&#x7684;&#x533A;&#x522B;
+</code></pre><p>&#xA0;</p>
+<p>&#x4E0E;&#x5176;&#x4ED6;&#x8BED;&#x8A00;&#x7684;&#x5E38;&#x91CF;&#x7C7B;&#x4F3C;&#xFF0C;<code>maxItems</code>&#x53D8;&#x91CF;&#x4E0D;&#x80FD;&#x88AB;&#x518D;&#x6B21;&#x8D4B;&#x503C;&#x3002;&#x7136;&#x800C;&#x4E0E;&#x5176;&#x4ED6;&#x8BED;&#x8A00;&#x4E0D;&#x540C;&#xFF0C;<code>JS</code>&#x7684;&#x5E38;&#x91CF; &#x5982;&#x679C;&#x662F;&#x4E00;&#x4E2A;&#x5BF9;&#x8C61;&#xFF0C;&#x5B83;&#x6240;&#x5305;&#x542B;&#x7684;&#x503C;&#x662F;&#x53EF;&#x4EE5;&#x88AB;&#x4FEE;&#x6539;&#x7684;&#x3002;</p>
+<p>&#xA0;</p>
+<hr>
+<h3 id="&#x1F3A8;&#x4F7F;&#x7528;const&#x58F0;&#x660E;&#x5BF9;&#x8C61;">&#x1F3A8;&#x4F7F;&#x7528;const&#x58F0;&#x660E;&#x5BF9;&#x8C61;</h3>
+<p>&#xA0;</p>
+<p><code>const</code>&#x58F0;&#x660E;&#x4F1A;&#x963B;&#x6B62;&#x5BF9;&#x4E8E;&#x53D8;&#x91CF;&#x7ED1;&#x5B9A;&#x4E0E;&#x53D8;&#x91CF;&#x81EA;&#x8EAB;&#x503C;&#x7684;&#x4FEE;&#x6539;&#xFF0C;&#x8FD9;&#x610F;&#x5473;&#x7740;<code>const</code>&#x58F0;&#x660E;&#x5E76;&#x4E0D;&#x4F1A;&#x963B;&#x6B62;&#x5BF9;&#x53D8;&#x91CF;&#x6210;&#x5458;&#x7684;&#x4FEE;&#x6539;&#x3002;&#x4F8B;&#x5982;&#xFF1A;</p>
+<pre><code>const person = {                
+
+    name : &quot;Nicholas&quot; 
+
+};
+
+// &#x5DE5;&#x4F5C;&#x6B63;&#x5E38; 
+
+
+person.name = &quot;Greg&quot;;
+
+// &#x629B;&#x51FA;&#x9519;&#x8BEF; 
+
+person = {    
+
+    name : &quot;Greg&quot;
+
+};
+</code></pre><p>&#xA0;</p>
+<p>&#x6B64;&#x5904;<code>person</code>&#x5728;&#x521D;&#x59CB;&#x5316;&#x65F6;&#x88AB;&#x7ED1;&#x5B9A;&#x4E86;&#x5E26;&#x6709;&#x4E00;&#x4E2A;&#x5C5E;&#x6027;&#x7684;&#x5BF9;&#x8C61;&#x3002;&#x4FEE;&#x6539;<code>person.name</code>&#x662F;&#x53EF;&#x80FD;&#x7684;&#xFF0C;&#x5E76;&#x4E0D;&#x4F1A;&#x629B;&#x51FA;&#x9519;&#x8BEF;&#xFF0C;&#x56E0;&#x4E3A;&#x8BE5;&#x64CD;&#x4F5C;&#x53EA;&#x4FEE;&#x6539;&#x4E86;<code>person</code>&#x5BF9;&#x8C61;&#x7684;&#x6210;&#x5458;&#xFF0C;&#x800C;&#x6CA1;&#x6709;&#x4FEE;&#x6539;<code>person</code>&#x7684;&#x7ED1;&#x5B9A;&#x503C;&#x3002;&#x5F53;&#x4EE3;&#x7801;&#x8BD5;&#x56FE;&#x4E3A;<code>person</code>&#x5BF9;&#x8C61;&#x81EA;&#x8EAB;&#x8D4B;&#x503C;&#x65F6;&#xFF08;&#x8FD9;&#x4F1A;&#x6539;&#x53D8;&#x53D8;&#x91CF;&#x7ED1;&#x5B9A;&#xFF09;&#xFF0C;&#x5C31;&#x4F1A;&#x5BFC;&#x81F4;&#x9519;&#x8BEF;&#x3002;<code>const</code>&#x5728;&#x53D8;&#x91CF;&#x4E0A;&#x7684;&#x5FAE;&#x5999;&#x5DE5;&#x4F5C;&#x673A;&#x5236;&#x5BB9;&#x6613;&#x5BFC;&#x81F4;&#x8BEF;&#x89E3;&#xFF0C;&#x4F46;&#x53EA;&#x9700;&#x8BB0;&#x4F4F;&#xFF1A;<code>const</code>&#x963B;&#x6B62;&#x7684;&#x662F;&#x5BF9;&#x4E8E;&#x53D8;&#x91CF;&#x7ED1;&#x5B9A;&#x7684;&#x4FEE;&#x6539;&#xFF0C;&#x800C;&#x4E0D;&#x963B;&#x6B62;&#x5BF9;&#x6210;&#x5458;&#x503C;&#x7684;&#x4FEE;&#x6539;&#x3002;</p>
 
                                 
                                 </section>
@@ -798,7 +874,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"2-3、常量声明","level":"1.2.2.3","depth":3,"next":{"title":"2-4、暂时性死区","level":"1.2.2.4","depth":3,"path":"块级绑定/暂时性死区.md","ref":"块级绑定/暂时性死区.md","articles":[]},"previous":{"title":"2-2、禁止重复声明","level":"1.2.2.2","depth":3,"path":"块级绑定/禁止重复声明.md","ref":"块级绑定/禁止重复声明.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"块级绑定/常量声明.md","mtime":"2019-03-26T01:50:36.792Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-03-27T03:04:50.640Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"2-3、常量声明","level":"1.2.2.3","depth":3,"next":{"title":"2-4、暂时性死区","level":"1.2.2.4","depth":3,"path":"块级绑定/暂时性死区.md","ref":"块级绑定/暂时性死区.md","articles":[]},"previous":{"title":"2-2、禁止重复声明","level":"1.2.2.2","depth":3,"path":"块级绑定/禁止重复声明.md","ref":"块级绑定/禁止重复声明.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"块级绑定/常量声明.md","mtime":"2019-03-27T06:26:01.186Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-03-27T06:26:31.411Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
