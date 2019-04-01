@@ -755,6 +755,23 @@
                                 <section class="normal markdown-section">
                                 
                                 <h1 id="&#x5FAA;&#x73AF;&#x4E2D;&#x7684;&#x5757;&#x7EA7;&#x7ED1;&#x5B9A;">&#x5FAA;&#x73AF;&#x4E2D;&#x7684;&#x5757;&#x7EA7;&#x7ED1;&#x5B9A;</h1>
+<blockquote>
+<p>&#x5F00;&#x53D1;&#x8005;&#x6700;&#x9700;&#x8981;&#x4F7F;&#x7528;&#x53D8;&#x91CF;&#x7684;&#x5757;&#x7EA7;&#x4F5C;&#x7528;&#x57DF;&#x7684;&#x573A;&#x666F;&#xFF0C;&#x6216;&#x8BB8;&#x5C31;&#x662F;&#x5728;<code>for</code>&#x5FAA;&#x73AF;&#x5185;&#xFF0C;&#x4E5F;&#x5C31;&#x662F;&#x60F3;&#x8BA9;&#x4E00;&#x6B21;&#x6027;&#x7684; &#x5FAA;&#x73AF;&#x8BA1;&#x6570;&#x5668;&#x4EC5;&#x80FD;&#x5728;&#x5FAA;&#x73AF;&#x5185;&#x90E8;&#x4F7F;&#x7528;&#x3002;&#x4F8B;&#x5982;&#xFF0C;&#x4EE5;&#x4E0B;&#x4EE3;&#x7801;&#x5728;<code>JS</code>&#x4E2D;&#x5E76;&#x4E0D;&#x7F55;&#x89C1;</p>
+</blockquote>
+<pre><code>for (var i = 0; i &lt; 10 ; i ++){
+    process(items[i]);
+}
+
+//i&#x5728;&#x6B64;&#x5904;&#x4F9D;&#x65E7;&#x53EF;&#x4EE5;&#x88AB;&#x8BBF;&#x95EE;&#x5230;
+console.log(i);       //10
+</code></pre><p>&#x5728;&#x5176;&#x4ED6;&#x9ED8;&#x8BA4;&#x4F7F;&#x7528;&#x5757;&#x7EA7;&#x4F5C;&#x7528;&#x57DF;&#x7684;&#x8BED;&#x8A00;&#x4E2D;&#xFF0C;&#x8FD9;&#x4E2A;&#x4F8B;&#x5B50;&#x80FD;&#x591F;&#x7167;&#x9884;&#x671F;&#x5DE5;&#x4F5C;&#xFF0C;&#x4E5F;&#x5C31;&#x662F;&#x53EA;&#x6709;<code>for</code>&#x624D;&#x80FD;&#x8BBF;&#x95EE; &#x53D8;&#x91CF;<code>i</code>&#x3002;&#x7136;&#x800C;&#x5728;<code>JS</code>&#x4E2D;&#xFF0C;&#x5FAA;&#x73AF;&#x7ED3;&#x675F;&#x540E;<code>i</code>&#x4ECD;&#x7136;&#x53EF;&#x88AB;&#x8BBF;&#x95EE;&#xFF0C;&#x56E0;&#x4E3A;<code>var</code>&#x58F0;&#x660E;&#x5BFC;&#x81F4;&#x4E86;&#x53D8;&#x91CF;&#x63D0;&#x5347;&#x3002; &#x82E5;&#x50CF;&#x5982;&#x4E0B;&#x4EE3;&#x7801;&#x90A3;&#x6837;&#x6362;&#x4E3A;&#x4F7F;&#x7528;<code>let</code>&#xFF0C;&#x5219;&#x4F1A;&#x770B;&#x5230;&#x9884;&#x671F;&#x884C;&#x4E3A;&#xFF1A;</p>
+<pre><code>for (let i = 0; i &lt;10 ; i ++){
+    process(items[i]);
+}
+
+//i&#x5728;&#x6B64;&#x5904;&#x4E0D;&#x53EF;&#x4EE5;&#x88AB;&#x8BBF;&#x95EE;&#x5230;&#xFF0C;&#x629B;&#x51FA;&#x9519;&#x8BEF;
+console.log(i);
+</code></pre><p>&#x672C;&#x4F8B;&#x4E2D;&#x7684;&#x53D8;&#x91CF;<code>i</code>&#x4EC5;&#x5728;<code>for</code>&#x5FAA;&#x73AF;&#x5185;&#x90E8;&#x53EF;&#x7528;&#xFF0C;&#x4E00;&#x65E6;&#x5FAA;&#x73AF;&#x7ED3;&#x675F;&#xFF0C;&#x8BE5;&#x53D8;&#x91CF;&#x5728;&#x4EFB;&#x610F;&#x4F4D;&#x7F6E;&#x90FD;&#x4E0D;&#x53EF;&#x8BBF;&#x95EE;&#x3002;</p>
 
                                 
                                 </section>
@@ -798,7 +815,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"3、循环中的块级绑定","level":"1.2.3","depth":2,"next":{"title":"3-1、循环内的函数","level":"1.2.3.1","depth":3,"path":"块级绑定/循环内的函数.md","ref":"块级绑定/循环内的函数.md","articles":[]},"previous":{"title":"2-4、暂时性死区","level":"1.2.2.4","depth":3,"path":"块级绑定/暂时性死区.md","ref":"块级绑定/暂时性死区.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"块级绑定/循环中的块级绑定.md","mtime":"2019-03-26T02:03:27.781Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-03-27T06:26:31.411Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"3、循环中的块级绑定","level":"1.2.3","depth":2,"next":{"title":"3-1、循环内的函数","level":"1.2.3.1","depth":3,"path":"块级绑定/循环内的函数.md","ref":"块级绑定/循环内的函数.md","articles":[]},"previous":{"title":"2-4、暂时性死区","level":"1.2.2.4","depth":3,"path":"块级绑定/暂时性死区.md","ref":"块级绑定/暂时性死区.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"块级绑定/循环中的块级绑定.md","mtime":"2019-03-31T08:02:49.606Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-04-01T06:05:08.248Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
